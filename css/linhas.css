@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    text-align: center;
+    background-image: url("../assets/img/linhas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 120px; 
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    z-index: -1;
+}
+
+
+.umbanda-linhas {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+/* Títulos principais */
+.umbanda-linhas h2 {
+    font-size: 32px;
+    color: #4b2e83;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Subtítulos */
+.umbanda-linhas h3 {
+    font-size: 26px;
+    color: #2e2e2e;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 5px solid #4b2e83;
+    padding-left: 12px;
+}
+
+/* Parágrafos */
+.umbanda-linhas p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Footer fixo */
+footer, 
+.umbanda-footer {
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #020202;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .umbanda-linhas {
+        padding: 20px;
+        margin: 20px;
+    }
+    .umbanda-linhas h2 {
+        font-size: 26px;
+    }
+    .umbanda-linhas h3 {
+        font-size: 22px;
+    }
+    .umbanda-linhas p {
+        font-size: 18px;
+    }
+}
