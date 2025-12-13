@@ -83,6 +83,43 @@ footer,
     font-family: Arial, sans-serif;
     z-index: 1000;
 }
+av {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav a {
+    text-decoration: none !important;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #1a237e;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #091161;
+    color: #fff;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {

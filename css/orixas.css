@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../assets/img/orixas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Centraliza e melhora leitura */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+  color: #fff;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  max-width: 900px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+/* Parágrafos */
+p {
+  max-width: 900px;
+  margin: 15px 0;
+  padding: 15px;
+
+  background-color: rgba(89, 105, 24, 0.85);
+  border-radius: 10px;
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Destaques */
+strong {
+  color: #ffeb3b;
+}
+
+em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+av {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav a {
+    text-decoration: none !important;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #1a237e;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #091161;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 10px;
+    text-align: left;
+  }
+}
