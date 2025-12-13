@@ -63,7 +63,7 @@ section {
 }
 
 footer {
-     font-size: 12px;
+    font-size: 12px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -71,9 +71,8 @@ footer {
     background-color: #020202;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 5px;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
     z-index: 1000;
 }
 @media (max-width: 600px) {
