@@ -1,170 +1,188 @@
-/* Reset */
+/* =====================
+   RESET
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* =====================
+   BODY
+===================== */
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #222;
+
   background-image: url("../assets/img/orixas.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  /* Centraliza e melhora leitura */
+/* =====================
+   CONTEÚDO PRINCIPAL
+===================== */
+.conteudo {
+  width: 100%;
+  max-width: 1100px; /* largura do site */
+  padding: 30px 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 20px;
-  color: #fff;
 }
 
-/* Títulos */
-h1, h2, h3 {
-  max-width: 900px;
-  margin-bottom: 15px;
+/* =====================
+   NAV
+===================== */
+nav {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a237e;
+  font-size: 18px;
+}
+
+/* =====================
+   TÍTULOS
+===================== */
+h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.2rem;
-  margin-top: 20px;
-}
-
 h2 {
-  font-size: 1.8rem;
-  margin-top: 30px;
+  font-size: 30px;
+  margin: 40px 0 20px;
+  text-align: center;
 }
 
 h3 {
-  font-size: 1.4rem;
-  margin-top: 20px;
+  font-size: 24px;
+  margin: 30px 0 15px;
+  text-align: center;
 }
 
-/* Parágrafos */
+/* =====================
+   PARÁGRAFOS
+===================== */
 p {
+  width: 100%;
   max-width: 900px;
-  margin: 15px 0;
-  padding: 15px;
+  margin-bottom: 18px;
+  padding: 18px;
 
-  background-color: rgba(89, 105, 24, 0.85);
-  border-radius: 10px;
+  background-color: rgba(236, 230, 230, 0.85);
+  border-radius: 12px;
 
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 1.6;
   text-align: justify;
 }
 
 /* Destaques */
 strong {
-  color: #ffeb3b;
+  color: #4b2e83;
 }
 
 em {
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
   font-style: italic;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  width: 100%;
+  margin-top: auto;
+  background-color: #020202;
+  color: #ffffff;
+  padding: 20px 10px;
   text-align: center;
 }
 
-av {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-
-nav a {
-    text-decoration: none !important;
-    color: #000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 15px 0;
-    margin: 0;
-}
-
-nav ul li a {
-    color: #1a237e;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #091161;
-    color: #fff;
-}
-footer {
-    font-size: 12px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #020202;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 5px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    z-index: 1000;
+/* PARÁGRAFOS DO FOOTER */
+footer .footer-p {
+  margin: 6px 0;
+  padding: 0;
+  max-width: none;
+  background: none;
+  border-radius: 0;
+  font-size: 13px;
+  text-align: center;
 }
 
 footer a {
-    color: #ffffff;
-    text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
-@media (max-width: 768px) {
+
+
+
+
+/* =====================
+   RESPONSIVO
+===================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
   body {
-    padding: 15px;
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 24px;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 22px;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
 
   p {
-    font-size: 1rem;
-    padding: 12px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.6rem;
+    font-size: 16px;
+    padding: 14px;
   }
 
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-    padding: 10px;
-    text-align: left;
+  .footer-p {
+    font-size: 11px;
   }
 }

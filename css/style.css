@@ -15,6 +15,14 @@ body {
     background-size: cover;
     text-align: center;
 }
+.conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRALIZA TODO O TEXTO */
+  padding: 20px;
+}
+
 
 /* HEADER */
 header {
@@ -75,7 +83,7 @@ section {
 /* FOOTER */
 footer {
     font-size: 12px;
-    position: fixed;
+  
     bottom: 0;
     left: 0;
     width: 100%;
@@ -161,14 +169,3 @@ footer a {
     }
 }
 
-/* 🖥️ DESKTOP GRANDE */
-@media (min-width: 1200px) {
-
-    body {
-        font-size: 22px;
-    }
-
-    section {
-        max-width: 900px;
-    }
-}

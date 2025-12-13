@@ -41,7 +41,7 @@ body::before {
     text-align: left;
 }
 
-/* Títulos principais */
+
 .umbanda-linhas h2 {
     font-size: 32px;
     color: #4b2e83;
@@ -49,7 +49,7 @@ body::before {
     text-align: center;
 }
 
-/* Subtítulos */
+
 .umbanda-linhas h3 {
     font-size: 26px;
     color: #2e2e2e;
@@ -59,7 +59,7 @@ body::before {
     padding-left: 12px;
 }
 
-/* Parágrafos */
+
 .umbanda-linhas p {
     font-size: 20px;
     line-height: 1.6;
@@ -67,10 +67,9 @@ body::before {
     margin-bottom: 15px;
 }
 
-/* Footer fixo */
-footer, 
-.umbanda-footer {
-    font-size: 14px;
+
+footer {
+    font-size: 12px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -78,12 +77,17 @@ footer,
     background-color: #020202;
     color: #ffffff;
     text-align: center;
-    padding: 12px 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
-    font-family: Arial, sans-serif;
+    padding: 10px 5px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 }
-av {
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: sticky;
@@ -121,7 +125,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     body {
         font-size: 18px;
@@ -139,4 +143,10 @@ nav ul li a:hover {
     .umbanda-linhas p {
         font-size: 18px;
     }
+
+  footer {
+        font-size: 10px;
+        padding: 8px 5px;
+    }
+
 }
