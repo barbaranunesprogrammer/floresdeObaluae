@@ -1,15 +1,11 @@
-/* =====================
-   RESET
-===================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =====================
-   BODY
-===================== */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -26,12 +22,10 @@ body {
   background-size: cover;
 }
 
-/* =====================
-   CONTEÚDO PRINCIPAL
-===================== */
+
 .conteudo {
   width: 100%;
-  max-width: 1100px; /* largura do site */
+  max-width: 1100px; 
   padding: 30px 20px;
 
   display: flex;
@@ -39,25 +33,32 @@ body {
   align-items: center;
 }
 
-/* =====================
-   NAV
-===================== */
+
 nav {
   width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
 }
+
 
 nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #1a237e;
-  font-size: 18px;
+  text-decoration: none !important;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 25px;
+
+}
+nav a:hover{
+  background-color: #4b5320;
+color:#ffffff;
 }
 
-/* =====================
-   TÍTULOS
-===================== */
 h1 {
   font-size: 36px;
   margin-bottom: 25px;
@@ -76,9 +77,7 @@ h3 {
   text-align: center;
 }
 
-/* =====================
-   PARÁGRAFOS
-===================== */
+
 p {
   width: 100%;
   max-width: 900px;
@@ -93,7 +92,7 @@ p {
   text-align: justify;
 }
 
-/* Destaques */
+
 strong {
   color: #4b2e83;
 }
@@ -105,9 +104,7 @@ em {
   font-style: italic;
 }
 
-/* =====================
-   FOOTER
-===================== */
+
 footer {
     font-size: 12px;
     position: fixed;
@@ -122,7 +119,7 @@ footer {
     z-index: 1000;
 }
 
-/* PARÁGRAFOS DO FOOTER */
+
 footer .footer-p {
   margin: 6px 0;
   padding: 0;
@@ -141,11 +138,7 @@ footer a {
 
 
 
-/* =====================
-   RESPONSIVO
-===================== */
 
-/* TABLET */
 @media (max-width: 900px) {
   h1 {
     font-size: 30px;
@@ -164,7 +157,7 @@ footer a {
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 600px) {
   body {
     font-size: 16px;

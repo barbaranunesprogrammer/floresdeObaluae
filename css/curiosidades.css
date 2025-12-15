@@ -6,16 +6,20 @@
 }
 nav {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin-top: 20px;
 }
 
 
 nav a {
     text-decoration: none !important;
     color: #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 25px;
+
 }
 
 nav ul {
