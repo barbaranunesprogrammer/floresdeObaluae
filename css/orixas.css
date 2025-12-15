@@ -85,6 +85,15 @@ color:#ffffff;
 .esquerda .card {
   border-left: 5px solid #7a1f1f; 
 }
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link .card {
+  cursor: pointer;
+}
 
 
 h1 {
