@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -21,7 +21,7 @@ body {
   background-size: cover;
 }
 
-/* ===== CONTEÚDO ===== */
+
 .conteudo {
   width: 100%;
   max-width: 1100px;
@@ -32,7 +32,7 @@ body {
   align-items: center;
 }
 
-/* ===== NAV ===== */
+
 nav {
   width: 100%;
   position: sticky;
@@ -58,7 +58,7 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* ===== CARDS ===== */
+
 .cards-container {
   width: 100%;
   display: grid;
@@ -81,7 +81,7 @@ nav a:hover {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* Diferenciação Direita / Esquerda */
+
 .direita .card {
   border-left: 5px solid #c9a227;
 }
@@ -90,7 +90,7 @@ nav a:hover {
   border-left: 5px solid #7a1f1f;
 }
 
-/* Card clicável */
+
 .card-link {
   display: block;
   text-decoration: none;
@@ -101,7 +101,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ===== TIPOGRAFIA ===== */
+
 h1 {
   font-size: 36px;
   margin-bottom: 25px;
@@ -145,7 +145,7 @@ em {
   font-style: italic;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   font-size: 12px;
   position: fixed;

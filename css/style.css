@@ -61,12 +61,15 @@ header {
 /* NAV */
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 28px;
+
     padding: 25px 0;
-    flex-wrap: wrap;
+    max-width: 900px;
+    margin:  auto;
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -126,29 +129,36 @@ section h2 {
     margin-bottom: 18px;
     font-family: 'Cinzel', serif;
 }
-
-/* FOOTER */
 footer {
     font-size: 12px;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #020202;
     color: #ffffff;
     text-align: center;
-    padding: 12px 8px;
+    padding: 10px 5px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
-}
-
-footer a {
+  }
+  
+  footer .footer-p {
+    margin: 6px 0;
+    padding: 0;
+    max-width: none;
+    background: none;
+    border-radius: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  footer a {
     color: #ffffff;
     text-decoration: underline;
-}
+  }
 
-/* =========================
-   RESPONSIVO
-========================= */
-
+/* FOOTER */
 @media (max-width: 600px) {
 
     body {
@@ -164,12 +174,29 @@ footer a {
     }
 
     nav ul {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row; 
+        gap: 18px 16px;
+
+        max-width: 360px;   
+        margin: 25px auto 10px;
+        padding: 0;
+        justify-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul li a {
-        font-size: 12px;
-        padding: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 12px 8px;
+        font-size: 13px;
+        line-height: 1.3;
     }
 
     section {
@@ -179,6 +206,7 @@ footer a {
 
     footer {
         font-size: 10px;
+        position: relative;
     }
 }
 
@@ -190,6 +218,11 @@ footer a {
 
     .title {
         font-size: 34px;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 28px;
     }
 
     section {
